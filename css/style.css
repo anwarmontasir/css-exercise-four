@@ -1,4 +1,47 @@
+* {box-sizing: border-box;}
 body {
   background-color: #dadada;
-  font-size: 10px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1em;
+}
+.preview {
+  position: relative;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+.preview h2 {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, .7);
+}
+@media screen and (min-width: 500px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .preview {
+    flex: 1 1 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .flex {
+    flex-wrap: nowrap;
+  }
+  .preview {
+    flex: 1 1 1 1 25%;
+  }
 }
